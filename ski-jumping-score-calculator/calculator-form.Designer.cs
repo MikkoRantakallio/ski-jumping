@@ -1,6 +1,6 @@
 ﻿namespace ski_jumping_score_calculator
 {
-    partial class Form1
+    partial class CalculatorForm
     {
         /// <summary>
         /// Required designer variable.
@@ -29,59 +29,62 @@
         private void InitializeComponent()
         {
             this.groupBoxHillSetup = new System.Windows.Forms.GroupBox();
-            this.groupBoxCompetitor = new System.Windows.Forms.GroupBox();
-            this.groupBoxJudgePoints = new System.Windows.Forms.GroupBox();
-            this.groupBoxCompensations = new System.Windows.Forms.GroupBox();
-            this.groupBoxScore = new System.Windows.Forms.GroupBox();
-            this.labelKPoint = new System.Windows.Forms.Label();
-            this.numericUpDownKPoint = new System.Windows.Forms.NumericUpDown();
-            this.labelPointsPerM = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.numericUpDownPointsPerM = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownCompetitorNumber = new System.Windows.Forms.NumericUpDown();
-            this.labelCompNumber = new System.Windows.Forms.Label();
-            this.labelCompName = new System.Windows.Forms.Label();
+            this.labelPointsPerM = new System.Windows.Forms.Label();
+            this.numericUpDownKPoint = new System.Windows.Forms.NumericUpDown();
+            this.labelKPoint = new System.Windows.Forms.Label();
+            this.groupBoxCompetitor = new System.Windows.Forms.GroupBox();
             this.textBoxCompetitorName = new System.Windows.Forms.TextBox();
-            this.numericUpDownJudge1 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownJudge2 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownJudge3 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownJudge4 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownJudge5 = new System.Windows.Forms.NumericUpDown();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.labelCompName = new System.Windows.Forms.Label();
+            this.labelCompNumber = new System.Windows.Forms.Label();
+            this.numericUpDownCompetitorNumber = new System.Windows.Forms.NumericUpDown();
+            this.groupBoxJudgePoints = new System.Windows.Forms.GroupBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.numericUpDownWindAverage = new System.Windows.Forms.NumericUpDown();
-            this.labelWind = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.numericUpDownJudge5 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownJudge4 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownJudge3 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownJudge2 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownJudge1 = new System.Windows.Forms.NumericUpDown();
+            this.groupBoxCompensations = new System.Windows.Forms.GroupBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.labelStartGate = new System.Windows.Forms.Label();
             this.numericUpDownStartGate = new System.Windows.Forms.NumericUpDown();
+            this.labelWind = new System.Windows.Forms.Label();
+            this.numericUpDownWindAverage = new System.Windows.Forms.NumericUpDown();
+            this.groupBoxScore = new System.Windows.Forms.GroupBox();
+            this.buttonCalculate = new System.Windows.Forms.Button();
+            this.label10 = new System.Windows.Forms.Label();
+            this.textBoxScore = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.labelLength = new System.Windows.Forms.Label();
             this.numericUpDownJumpLength = new System.Windows.Forms.NumericUpDown();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.textBoxScore = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.buttonCalculate = new System.Windows.Forms.Button();
+            this.groupBoxResults = new System.Windows.Forms.GroupBox();
+            this.listViewResults = new System.Windows.Forms.ListView();
             this.groupBoxHillSetup.SuspendLayout();
-            this.groupBoxCompetitor.SuspendLayout();
-            this.groupBoxJudgePoints.SuspendLayout();
-            this.groupBoxCompensations.SuspendLayout();
-            this.groupBoxScore.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownKPoint)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPointsPerM)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownKPoint)).BeginInit();
+            this.groupBoxCompetitor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCompetitorNumber)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownJudge1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownJudge2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownJudge3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownJudge4)).BeginInit();
+            this.groupBoxJudgePoints.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownJudge5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownWindAverage)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownJudge4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownJudge3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownJudge2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownJudge1)).BeginInit();
+            this.groupBoxCompensations.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownStartGate)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownWindAverage)).BeginInit();
+            this.groupBoxScore.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownJumpLength)).BeginInit();
+            this.groupBoxResults.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBoxHillSetup
@@ -99,108 +102,15 @@
             this.groupBoxHillSetup.TabStop = false;
             this.groupBoxHillSetup.Text = "Hill Setup";
             // 
-            // groupBoxCompetitor
+            // label7
             // 
-            this.groupBoxCompetitor.Controls.Add(this.textBoxCompetitorName);
-            this.groupBoxCompetitor.Controls.Add(this.labelCompName);
-            this.groupBoxCompetitor.Controls.Add(this.labelCompNumber);
-            this.groupBoxCompetitor.Controls.Add(this.numericUpDownCompetitorNumber);
-            this.groupBoxCompetitor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxCompetitor.Location = new System.Drawing.Point(204, 12);
-            this.groupBoxCompetitor.Name = "groupBoxCompetitor";
-            this.groupBoxCompetitor.Size = new System.Drawing.Size(537, 96);
-            this.groupBoxCompetitor.TabIndex = 2;
-            this.groupBoxCompetitor.TabStop = false;
-            this.groupBoxCompetitor.Text = "Competitor";
-            // 
-            // groupBoxJudgePoints
-            // 
-            this.groupBoxJudgePoints.Controls.Add(this.label5);
-            this.groupBoxJudgePoints.Controls.Add(this.label4);
-            this.groupBoxJudgePoints.Controls.Add(this.label3);
-            this.groupBoxJudgePoints.Controls.Add(this.label2);
-            this.groupBoxJudgePoints.Controls.Add(this.label1);
-            this.groupBoxJudgePoints.Controls.Add(this.numericUpDownJudge5);
-            this.groupBoxJudgePoints.Controls.Add(this.numericUpDownJudge4);
-            this.groupBoxJudgePoints.Controls.Add(this.numericUpDownJudge3);
-            this.groupBoxJudgePoints.Controls.Add(this.numericUpDownJudge2);
-            this.groupBoxJudgePoints.Controls.Add(this.numericUpDownJudge1);
-            this.groupBoxJudgePoints.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxJudgePoints.Location = new System.Drawing.Point(204, 221);
-            this.groupBoxJudgePoints.Name = "groupBoxJudgePoints";
-            this.groupBoxJudgePoints.Size = new System.Drawing.Size(536, 112);
-            this.groupBoxJudgePoints.TabIndex = 4;
-            this.groupBoxJudgePoints.TabStop = false;
-            this.groupBoxJudgePoints.Text = "Judge Points";
-            // 
-            // groupBoxCompensations
-            // 
-            this.groupBoxCompensations.Controls.Add(this.label9);
-            this.groupBoxCompensations.Controls.Add(this.label8);
-            this.groupBoxCompensations.Controls.Add(this.labelStartGate);
-            this.groupBoxCompensations.Controls.Add(this.numericUpDownStartGate);
-            this.groupBoxCompensations.Controls.Add(this.labelWind);
-            this.groupBoxCompensations.Controls.Add(this.numericUpDownWindAverage);
-            this.groupBoxCompensations.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxCompensations.Location = new System.Drawing.Point(204, 339);
-            this.groupBoxCompensations.Name = "groupBoxCompensations";
-            this.groupBoxCompensations.Size = new System.Drawing.Size(536, 98);
-            this.groupBoxCompensations.TabIndex = 5;
-            this.groupBoxCompensations.TabStop = false;
-            this.groupBoxCompensations.Text = "Compensations";
-            // 
-            // groupBoxScore
-            // 
-            this.groupBoxScore.Controls.Add(this.buttonCalculate);
-            this.groupBoxScore.Controls.Add(this.label10);
-            this.groupBoxScore.Controls.Add(this.textBoxScore);
-            this.groupBoxScore.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxScore.Location = new System.Drawing.Point(204, 443);
-            this.groupBoxScore.Name = "groupBoxScore";
-            this.groupBoxScore.Size = new System.Drawing.Size(536, 116);
-            this.groupBoxScore.TabIndex = 6;
-            this.groupBoxScore.TabStop = false;
-            this.groupBoxScore.Text = "Overall Score";
-            // 
-            // labelKPoint
-            // 
-            this.labelKPoint.AutoSize = true;
-            this.labelKPoint.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelKPoint.Location = new System.Drawing.Point(6, 49);
-            this.labelKPoint.Name = "labelKPoint";
-            this.labelKPoint.Size = new System.Drawing.Size(60, 20);
-            this.labelKPoint.TabIndex = 0;
-            this.labelKPoint.Text = "K-Point";
-            // 
-            // numericUpDownKPoint
-            // 
-            this.numericUpDownKPoint.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownKPoint.Location = new System.Drawing.Point(84, 47);
-            this.numericUpDownKPoint.Maximum = new decimal(new int[] {
-            250,
-            0,
-            0,
-            0});
-            this.numericUpDownKPoint.Name = "numericUpDownKPoint";
-            this.numericUpDownKPoint.Size = new System.Drawing.Size(56, 26);
-            this.numericUpDownKPoint.TabIndex = 0;
-            this.numericUpDownKPoint.TabStop = false;
-            this.numericUpDownKPoint.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.numericUpDownKPoint.Value = new decimal(new int[] {
-            110,
-            0,
-            0,
-            0});
-            // 
-            // labelPointsPerM
-            // 
-            this.labelPointsPerM.AutoSize = true;
-            this.labelPointsPerM.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPointsPerM.Location = new System.Drawing.Point(6, 102);
-            this.labelPointsPerM.Name = "labelPointsPerM";
-            this.labelPointsPerM.Size = new System.Drawing.Size(70, 20);
-            this.labelPointsPerM.TabIndex = 2;
-            this.labelPointsPerM.Text = "Points/m";
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(146, 49);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(22, 20);
+            this.label7.TabIndex = 6;
+            this.label7.Text = "m";
             // 
             // numericUpDownPointsPerM
             // 
@@ -228,6 +138,87 @@
             0,
             65536});
             // 
+            // labelPointsPerM
+            // 
+            this.labelPointsPerM.AutoSize = true;
+            this.labelPointsPerM.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPointsPerM.Location = new System.Drawing.Point(6, 102);
+            this.labelPointsPerM.Name = "labelPointsPerM";
+            this.labelPointsPerM.Size = new System.Drawing.Size(70, 20);
+            this.labelPointsPerM.TabIndex = 2;
+            this.labelPointsPerM.Text = "Points/m";
+            // 
+            // numericUpDownKPoint
+            // 
+            this.numericUpDownKPoint.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownKPoint.Location = new System.Drawing.Point(84, 47);
+            this.numericUpDownKPoint.Maximum = new decimal(new int[] {
+            250,
+            0,
+            0,
+            0});
+            this.numericUpDownKPoint.Name = "numericUpDownKPoint";
+            this.numericUpDownKPoint.Size = new System.Drawing.Size(56, 26);
+            this.numericUpDownKPoint.TabIndex = 0;
+            this.numericUpDownKPoint.TabStop = false;
+            this.numericUpDownKPoint.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.numericUpDownKPoint.Value = new decimal(new int[] {
+            110,
+            0,
+            0,
+            0});
+            // 
+            // labelKPoint
+            // 
+            this.labelKPoint.AutoSize = true;
+            this.labelKPoint.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelKPoint.Location = new System.Drawing.Point(6, 49);
+            this.labelKPoint.Name = "labelKPoint";
+            this.labelKPoint.Size = new System.Drawing.Size(60, 20);
+            this.labelKPoint.TabIndex = 0;
+            this.labelKPoint.Text = "K-Point";
+            // 
+            // groupBoxCompetitor
+            // 
+            this.groupBoxCompetitor.Controls.Add(this.textBoxCompetitorName);
+            this.groupBoxCompetitor.Controls.Add(this.labelCompName);
+            this.groupBoxCompetitor.Controls.Add(this.labelCompNumber);
+            this.groupBoxCompetitor.Controls.Add(this.numericUpDownCompetitorNumber);
+            this.groupBoxCompetitor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxCompetitor.Location = new System.Drawing.Point(204, 12);
+            this.groupBoxCompetitor.Name = "groupBoxCompetitor";
+            this.groupBoxCompetitor.Size = new System.Drawing.Size(537, 96);
+            this.groupBoxCompetitor.TabIndex = 2;
+            this.groupBoxCompetitor.TabStop = false;
+            this.groupBoxCompetitor.Text = "Competitor";
+            // 
+            // textBoxCompetitorName
+            // 
+            this.textBoxCompetitorName.Location = new System.Drawing.Point(214, 47);
+            this.textBoxCompetitorName.Name = "textBoxCompetitorName";
+            this.textBoxCompetitorName.Size = new System.Drawing.Size(317, 26);
+            this.textBoxCompetitorName.TabIndex = 5;
+            // 
+            // labelCompName
+            // 
+            this.labelCompName.AutoSize = true;
+            this.labelCompName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCompName.Location = new System.Drawing.Point(156, 49);
+            this.labelCompName.Name = "labelCompName";
+            this.labelCompName.Size = new System.Drawing.Size(51, 20);
+            this.labelCompName.TabIndex = 5;
+            this.labelCompName.Text = "Name";
+            // 
+            // labelCompNumber
+            // 
+            this.labelCompNumber.AutoSize = true;
+            this.labelCompNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCompNumber.Location = new System.Drawing.Point(6, 49);
+            this.labelCompNumber.Name = "labelCompNumber";
+            this.labelCompNumber.Size = new System.Drawing.Size(65, 20);
+            this.labelCompNumber.TabIndex = 4;
+            this.labelCompNumber.Text = "Number";
+            // 
             // numericUpDownCompetitorNumber
             // 
             this.numericUpDownCompetitorNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -242,103 +233,96 @@
             0,
             0});
             // 
-            // labelCompNumber
+            // groupBoxJudgePoints
             // 
-            this.labelCompNumber.AutoSize = true;
-            this.labelCompNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCompNumber.Location = new System.Drawing.Point(6, 49);
-            this.labelCompNumber.Name = "labelCompNumber";
-            this.labelCompNumber.Size = new System.Drawing.Size(65, 20);
-            this.labelCompNumber.TabIndex = 4;
-            this.labelCompNumber.Text = "Number";
+            this.groupBoxJudgePoints.Controls.Add(this.label5);
+            this.groupBoxJudgePoints.Controls.Add(this.label4);
+            this.groupBoxJudgePoints.Controls.Add(this.label3);
+            this.groupBoxJudgePoints.Controls.Add(this.label2);
+            this.groupBoxJudgePoints.Controls.Add(this.label1);
+            this.groupBoxJudgePoints.Controls.Add(this.numericUpDownJudge5);
+            this.groupBoxJudgePoints.Controls.Add(this.numericUpDownJudge4);
+            this.groupBoxJudgePoints.Controls.Add(this.numericUpDownJudge3);
+            this.groupBoxJudgePoints.Controls.Add(this.numericUpDownJudge2);
+            this.groupBoxJudgePoints.Controls.Add(this.numericUpDownJudge1);
+            this.groupBoxJudgePoints.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxJudgePoints.Location = new System.Drawing.Point(204, 221);
+            this.groupBoxJudgePoints.Name = "groupBoxJudgePoints";
+            this.groupBoxJudgePoints.Size = new System.Drawing.Size(536, 112);
+            this.groupBoxJudgePoints.TabIndex = 4;
+            this.groupBoxJudgePoints.TabStop = false;
+            this.groupBoxJudgePoints.Text = "Judge Points";
             // 
-            // labelCompName
+            // label5
             // 
-            this.labelCompName.AutoSize = true;
-            this.labelCompName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCompName.Location = new System.Drawing.Point(156, 49);
-            this.labelCompName.Name = "labelCompName";
-            this.labelCompName.Size = new System.Drawing.Size(51, 20);
-            this.labelCompName.TabIndex = 5;
-            this.labelCompName.Text = "Name";
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(437, 46);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(30, 20);
+            this.label5.TabIndex = 9;
+            this.label5.Text = "J 5";
             // 
-            // textBoxCompetitorName
+            // label4
             // 
-            this.textBoxCompetitorName.Location = new System.Drawing.Point(214, 47);
-            this.textBoxCompetitorName.Name = "textBoxCompetitorName";
-            this.textBoxCompetitorName.Size = new System.Drawing.Size(317, 26);
-            this.textBoxCompetitorName.TabIndex = 5;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(333, 46);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(30, 20);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "J 4";
             // 
-            // numericUpDownJudge1
+            // label3
             // 
-            this.numericUpDownJudge1.DecimalPlaces = 1;
-            this.numericUpDownJudge1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownJudge1.Increment = new decimal(new int[] {
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(229, 46);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(30, 20);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "J 3";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(125, 46);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(30, 20);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "J 2";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(21, 46);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(30, 20);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "J 1";
+            // 
+            // numericUpDownJudge5
+            // 
+            this.numericUpDownJudge5.DecimalPlaces = 1;
+            this.numericUpDownJudge5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownJudge5.Increment = new decimal(new int[] {
             5,
             0,
             0,
             65536});
-            this.numericUpDownJudge1.Location = new System.Drawing.Point(25, 71);
-            this.numericUpDownJudge1.Maximum = new decimal(new int[] {
+            this.numericUpDownJudge5.Location = new System.Drawing.Point(441, 71);
+            this.numericUpDownJudge5.Maximum = new decimal(new int[] {
             20,
             0,
             0,
             0});
-            this.numericUpDownJudge1.Name = "numericUpDownJudge1";
-            this.numericUpDownJudge1.Size = new System.Drawing.Size(67, 26);
-            this.numericUpDownJudge1.TabIndex = 7;
-            this.numericUpDownJudge1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.numericUpDownJudge1.Value = new decimal(new int[] {
-            18,
-            0,
-            0,
-            0});
-            // 
-            // numericUpDownJudge2
-            // 
-            this.numericUpDownJudge2.DecimalPlaces = 1;
-            this.numericUpDownJudge2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownJudge2.Increment = new decimal(new int[] {
-            5,
-            0,
-            0,
-            65536});
-            this.numericUpDownJudge2.Location = new System.Drawing.Point(129, 71);
-            this.numericUpDownJudge2.Maximum = new decimal(new int[] {
-            20,
-            0,
-            0,
-            0});
-            this.numericUpDownJudge2.Name = "numericUpDownJudge2";
-            this.numericUpDownJudge2.Size = new System.Drawing.Size(67, 26);
-            this.numericUpDownJudge2.TabIndex = 8;
-            this.numericUpDownJudge2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.numericUpDownJudge2.Value = new decimal(new int[] {
-            18,
-            0,
-            0,
-            0});
-            // 
-            // numericUpDownJudge3
-            // 
-            this.numericUpDownJudge3.DecimalPlaces = 1;
-            this.numericUpDownJudge3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownJudge3.Increment = new decimal(new int[] {
-            5,
-            0,
-            0,
-            65536});
-            this.numericUpDownJudge3.Location = new System.Drawing.Point(233, 71);
-            this.numericUpDownJudge3.Maximum = new decimal(new int[] {
-            20,
-            0,
-            0,
-            0});
-            this.numericUpDownJudge3.Name = "numericUpDownJudge3";
-            this.numericUpDownJudge3.Size = new System.Drawing.Size(67, 26);
-            this.numericUpDownJudge3.TabIndex = 9;
-            this.numericUpDownJudge3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.numericUpDownJudge3.Value = new decimal(new int[] {
+            this.numericUpDownJudge5.Name = "numericUpDownJudge5";
+            this.numericUpDownJudge5.Size = new System.Drawing.Size(67, 26);
+            this.numericUpDownJudge5.TabIndex = 11;
+            this.numericUpDownJudge5.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.numericUpDownJudge5.Value = new decimal(new int[] {
             18,
             0,
             0,
@@ -369,115 +353,116 @@
             0,
             0});
             // 
-            // numericUpDownJudge5
+            // numericUpDownJudge3
             // 
-            this.numericUpDownJudge5.DecimalPlaces = 1;
-            this.numericUpDownJudge5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownJudge5.Increment = new decimal(new int[] {
+            this.numericUpDownJudge3.DecimalPlaces = 1;
+            this.numericUpDownJudge3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownJudge3.Increment = new decimal(new int[] {
             5,
             0,
             0,
             65536});
-            this.numericUpDownJudge5.Location = new System.Drawing.Point(441, 71);
-            this.numericUpDownJudge5.Maximum = new decimal(new int[] {
+            this.numericUpDownJudge3.Location = new System.Drawing.Point(233, 71);
+            this.numericUpDownJudge3.Maximum = new decimal(new int[] {
             20,
             0,
             0,
             0});
-            this.numericUpDownJudge5.Name = "numericUpDownJudge5";
-            this.numericUpDownJudge5.Size = new System.Drawing.Size(67, 26);
-            this.numericUpDownJudge5.TabIndex = 11;
-            this.numericUpDownJudge5.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.numericUpDownJudge5.Value = new decimal(new int[] {
+            this.numericUpDownJudge3.Name = "numericUpDownJudge3";
+            this.numericUpDownJudge3.Size = new System.Drawing.Size(67, 26);
+            this.numericUpDownJudge3.TabIndex = 9;
+            this.numericUpDownJudge3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.numericUpDownJudge3.Value = new decimal(new int[] {
             18,
             0,
             0,
             0});
             // 
-            // label1
+            // numericUpDownJudge2
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(21, 46);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(30, 20);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "J 1";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(125, 46);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(30, 20);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "J 2";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(229, 46);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(30, 20);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "J 3";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(333, 46);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(30, 20);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "J 4";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(437, 46);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(30, 20);
-            this.label5.TabIndex = 9;
-            this.label5.Text = "J 5";
-            // 
-            // numericUpDownWindAverage
-            // 
-            this.numericUpDownWindAverage.DecimalPlaces = 1;
-            this.numericUpDownWindAverage.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownWindAverage.Increment = new decimal(new int[] {
-            1,
+            this.numericUpDownJudge2.DecimalPlaces = 1;
+            this.numericUpDownJudge2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownJudge2.Increment = new decimal(new int[] {
+            5,
             0,
             0,
             65536});
-            this.numericUpDownWindAverage.Location = new System.Drawing.Point(125, 44);
-            this.numericUpDownWindAverage.Maximum = new decimal(new int[] {
-            10,
+            this.numericUpDownJudge2.Location = new System.Drawing.Point(129, 71);
+            this.numericUpDownJudge2.Maximum = new decimal(new int[] {
+            20,
             0,
             0,
             0});
-            this.numericUpDownWindAverage.Minimum = new decimal(new int[] {
-            10,
+            this.numericUpDownJudge2.Name = "numericUpDownJudge2";
+            this.numericUpDownJudge2.Size = new System.Drawing.Size(67, 26);
+            this.numericUpDownJudge2.TabIndex = 8;
+            this.numericUpDownJudge2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.numericUpDownJudge2.Value = new decimal(new int[] {
+            18,
             0,
             0,
-            -2147483648});
-            this.numericUpDownWindAverage.Name = "numericUpDownWindAverage";
-            this.numericUpDownWindAverage.Size = new System.Drawing.Size(71, 26);
-            this.numericUpDownWindAverage.TabIndex = 12;
-            this.numericUpDownWindAverage.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            0});
             // 
-            // labelWind
+            // numericUpDownJudge1
             // 
-            this.labelWind.AutoSize = true;
-            this.labelWind.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelWind.Location = new System.Drawing.Point(11, 46);
-            this.labelWind.Name = "labelWind";
-            this.labelWind.Size = new System.Drawing.Size(106, 20);
-            this.labelWind.TabIndex = 1;
-            this.labelWind.Text = "Wind average";
+            this.numericUpDownJudge1.DecimalPlaces = 1;
+            this.numericUpDownJudge1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownJudge1.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            65536});
+            this.numericUpDownJudge1.Location = new System.Drawing.Point(25, 71);
+            this.numericUpDownJudge1.Maximum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            this.numericUpDownJudge1.Name = "numericUpDownJudge1";
+            this.numericUpDownJudge1.Size = new System.Drawing.Size(67, 26);
+            this.numericUpDownJudge1.TabIndex = 7;
+            this.numericUpDownJudge1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.numericUpDownJudge1.Value = new decimal(new int[] {
+            18,
+            0,
+            0,
+            0});
+            // 
+            // groupBoxCompensations
+            // 
+            this.groupBoxCompensations.Controls.Add(this.label9);
+            this.groupBoxCompensations.Controls.Add(this.label8);
+            this.groupBoxCompensations.Controls.Add(this.labelStartGate);
+            this.groupBoxCompensations.Controls.Add(this.numericUpDownStartGate);
+            this.groupBoxCompensations.Controls.Add(this.labelWind);
+            this.groupBoxCompensations.Controls.Add(this.numericUpDownWindAverage);
+            this.groupBoxCompensations.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxCompensations.Location = new System.Drawing.Point(204, 339);
+            this.groupBoxCompensations.Name = "groupBoxCompensations";
+            this.groupBoxCompensations.Size = new System.Drawing.Size(536, 98);
+            this.groupBoxCompensations.TabIndex = 5;
+            this.groupBoxCompensations.TabStop = false;
+            this.groupBoxCompensations.Text = "Compensations";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(452, 46);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(22, 20);
+            this.label9.TabIndex = 8;
+            this.label9.Text = "m";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(202, 46);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(34, 20);
+            this.label8.TabIndex = 6;
+            this.label8.Text = "m/s";
             // 
             // labelStartGate
             // 
@@ -514,6 +499,85 @@
             this.numericUpDownStartGate.TabIndex = 13;
             this.numericUpDownStartGate.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
+            // labelWind
+            // 
+            this.labelWind.AutoSize = true;
+            this.labelWind.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelWind.Location = new System.Drawing.Point(11, 46);
+            this.labelWind.Name = "labelWind";
+            this.labelWind.Size = new System.Drawing.Size(106, 20);
+            this.labelWind.TabIndex = 1;
+            this.labelWind.Text = "Wind average";
+            // 
+            // numericUpDownWindAverage
+            // 
+            this.numericUpDownWindAverage.DecimalPlaces = 1;
+            this.numericUpDownWindAverage.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownWindAverage.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            65536});
+            this.numericUpDownWindAverage.Location = new System.Drawing.Point(125, 44);
+            this.numericUpDownWindAverage.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            this.numericUpDownWindAverage.Minimum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            -2147483648});
+            this.numericUpDownWindAverage.Name = "numericUpDownWindAverage";
+            this.numericUpDownWindAverage.Size = new System.Drawing.Size(71, 26);
+            this.numericUpDownWindAverage.TabIndex = 12;
+            this.numericUpDownWindAverage.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // groupBoxScore
+            // 
+            this.groupBoxScore.Controls.Add(this.buttonCalculate);
+            this.groupBoxScore.Controls.Add(this.label10);
+            this.groupBoxScore.Controls.Add(this.textBoxScore);
+            this.groupBoxScore.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxScore.Location = new System.Drawing.Point(204, 443);
+            this.groupBoxScore.Name = "groupBoxScore";
+            this.groupBoxScore.Size = new System.Drawing.Size(536, 116);
+            this.groupBoxScore.TabIndex = 6;
+            this.groupBoxScore.TabStop = false;
+            this.groupBoxScore.Text = "Overall Score";
+            // 
+            // buttonCalculate
+            // 
+            this.buttonCalculate.Location = new System.Drawing.Point(25, 44);
+            this.buttonCalculate.Name = "buttonCalculate";
+            this.buttonCalculate.Size = new System.Drawing.Size(153, 35);
+            this.buttonCalculate.TabIndex = 0;
+            this.buttonCalculate.Text = "Calculate";
+            this.buttonCalculate.UseVisualStyleBackColor = true;
+            this.buttonCalculate.Click += new System.EventHandler(this.buttonCalculate_Click);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(311, 51);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(31, 20);
+            this.label10.TabIndex = 7;
+            this.label10.Text = "pts";
+            // 
+            // textBoxScore
+            // 
+            this.textBoxScore.Enabled = false;
+            this.textBoxScore.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxScore.Location = new System.Drawing.Point(206, 44);
+            this.textBoxScore.Name = "textBoxScore";
+            this.textBoxScore.Size = new System.Drawing.Size(81, 32);
+            this.textBoxScore.TabIndex = 1;
+            this.textBoxScore.TabStop = false;
+            this.textBoxScore.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.label6);
@@ -526,6 +590,16 @@
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Jump length";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(173, 43);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(22, 20);
+            this.label6.TabIndex = 5;
+            this.label6.Text = "m";
             // 
             // labelLength
             // 
@@ -562,113 +636,66 @@
             0,
             0});
             // 
-            // label6
+            // groupBoxResults
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(173, 43);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(22, 20);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "m";
+            this.groupBoxResults.Controls.Add(this.listViewResults);
+            this.groupBoxResults.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxResults.Location = new System.Drawing.Point(766, 23);
+            this.groupBoxResults.Name = "groupBoxResults";
+            this.groupBoxResults.Size = new System.Drawing.Size(419, 536);
+            this.groupBoxResults.TabIndex = 7;
+            this.groupBoxResults.TabStop = false;
+            this.groupBoxResults.Text = "Results";
             // 
-            // label7
+            // listViewResults
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(146, 49);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(22, 20);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "m";
+            this.listViewResults.Enabled = false;
+            this.listViewResults.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listViewResults.Location = new System.Drawing.Point(6, 38);
+            this.listViewResults.Name = "listViewResults";
+            this.listViewResults.Size = new System.Drawing.Size(407, 492);
+            this.listViewResults.TabIndex = 0;
+            this.listViewResults.UseCompatibleStateImageBehavior = false;
             // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(202, 46);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(34, 20);
-            this.label8.TabIndex = 6;
-            this.label8.Text = "m/s";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(452, 46);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(22, 20);
-            this.label9.TabIndex = 8;
-            this.label9.Text = "m";
-            // 
-            // textBoxScore
-            // 
-            this.textBoxScore.Enabled = false;
-            this.textBoxScore.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxScore.Location = new System.Drawing.Point(206, 44);
-            this.textBoxScore.Name = "textBoxScore";
-            this.textBoxScore.Size = new System.Drawing.Size(81, 32);
-            this.textBoxScore.TabIndex = 1;
-            this.textBoxScore.TabStop = false;
-            this.textBoxScore.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(311, 51);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(31, 20);
-            this.label10.TabIndex = 7;
-            this.label10.Text = "pts";
-            // 
-            // buttonCalculate
-            // 
-            this.buttonCalculate.Location = new System.Drawing.Point(25, 44);
-            this.buttonCalculate.Name = "buttonCalculate";
-            this.buttonCalculate.Size = new System.Drawing.Size(153, 35);
-            this.buttonCalculate.TabIndex = 0;
-            this.buttonCalculate.Text = "Calculate";
-            this.buttonCalculate.UseVisualStyleBackColor = true;
-            this.buttonCalculate.Click += new System.EventHandler(this.buttonCalculate_Click);
-            // 
-            // Form1
+            // CalculatorForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1063, 612);
+            this.ClientSize = new System.Drawing.Size(1197, 612);
+            this.Controls.Add(this.groupBoxResults);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBoxScore);
             this.Controls.Add(this.groupBoxCompensations);
             this.Controls.Add(this.groupBoxJudgePoints);
             this.Controls.Add(this.groupBoxCompetitor);
             this.Controls.Add(this.groupBoxHillSetup);
-            this.Name = "Form1";
+            this.Name = "CalculatorForm";
             this.Text = "Ski Jumping Scores Calculator";
+            this.Load += new System.EventHandler(this.CalculatorForm_Load);
             this.groupBoxHillSetup.ResumeLayout(false);
             this.groupBoxHillSetup.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPointsPerM)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownKPoint)).EndInit();
             this.groupBoxCompetitor.ResumeLayout(false);
             this.groupBoxCompetitor.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCompetitorNumber)).EndInit();
             this.groupBoxJudgePoints.ResumeLayout(false);
             this.groupBoxJudgePoints.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownJudge5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownJudge4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownJudge3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownJudge2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownJudge1)).EndInit();
             this.groupBoxCompensations.ResumeLayout(false);
             this.groupBoxCompensations.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownStartGate)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownWindAverage)).EndInit();
             this.groupBoxScore.ResumeLayout(false);
             this.groupBoxScore.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownKPoint)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPointsPerM)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCompetitorNumber)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownJudge1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownJudge2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownJudge3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownJudge4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownJudge5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownWindAverage)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownStartGate)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownJumpLength)).EndInit();
+            this.groupBoxResults.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -712,6 +739,8 @@
         private System.Windows.Forms.Button buttonCalculate;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox textBoxScore;
+        private System.Windows.Forms.GroupBox groupBoxResults;
+        private System.Windows.Forms.ListView listViewResults;
     }
 }
 
