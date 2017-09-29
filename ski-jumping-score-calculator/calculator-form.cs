@@ -26,6 +26,12 @@ namespace ski_jumping_score_calculator
 
         private void buttonCalculate_Click(object sender, EventArgs e)
         {
+            if (textBoxCompetitorName.Text.Trim()=="")
+            {
+                MessageBox.Show("Competitor cannot be empty!", "Missing data");
+                return;
+            }
+
             decimal baseLengthPoints = scoreCalculator.CalcLengthPoints(numericUpDownJumpLength.Value);
 
             decimal judgePoints = scoreCalculator.CalcJudgePoints(numericUpDownJudge1.Value, numericUpDownJudge2.Value, numericUpDownJudge3.Value,
@@ -45,14 +51,13 @@ namespace ski_jumping_score_calculator
             arr[0]= "";
 
             scoreList.Add(arr);
-            //scoreList.Sort();
-
-            scoreList.Sort((x, y) => y[2].CompareTo(x[2]));
+            scoreList.Sort((x, y) => decimal.Parse(y[2]).CompareTo( decimal.Parse(x[2])));
 
             // Clear the list
             listViewResults.Items.Clear();
             listViewResults.Refresh();
 
+            // Create new score list
             int i = 1;
             foreach (string[] comp in scoreList)
             {
@@ -67,6 +72,11 @@ namespace ski_jumping_score_calculator
             compNum += 1;
             numericUpDownCompetitorNumber.Value = compNum;
             textBoxCompetitorName.Text = "";
+
+            // Disable setup fields after first successful result
+
+            numericUpDownKPoint.Enabled = false;
+            numericUpDownPointsPerM.Enabled = false;
         }
 
         private void CalculatorForm_Load(object sender, EventArgs e)
