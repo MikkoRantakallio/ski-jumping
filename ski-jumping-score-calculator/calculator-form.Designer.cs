@@ -167,6 +167,7 @@
             0,
             0,
             0});
+            this.numericUpDownKPoint.ValueChanged += new System.EventHandler(this.numericUpDownKPoint_ValueChanged);
             // 
             // labelKPoint
             // 
@@ -631,7 +632,7 @@
             this.numericUpDownJumpLength.TabIndex = 6;
             this.numericUpDownJumpLength.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.numericUpDownJumpLength.Value = new decimal(new int[] {
-            100,
+            110,
             0,
             0,
             0});
@@ -642,7 +643,7 @@
             this.groupBoxResults.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxResults.Location = new System.Drawing.Point(766, 23);
             this.groupBoxResults.Name = "groupBoxResults";
-            this.groupBoxResults.Size = new System.Drawing.Size(419, 536);
+            this.groupBoxResults.Size = new System.Drawing.Size(471, 536);
             this.groupBoxResults.TabIndex = 7;
             this.groupBoxResults.TabStop = false;
             this.groupBoxResults.Text = "Results";
@@ -653,7 +654,7 @@
             this.listViewResults.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listViewResults.Location = new System.Drawing.Point(6, 38);
             this.listViewResults.Name = "listViewResults";
-            this.listViewResults.Size = new System.Drawing.Size(407, 492);
+            this.listViewResults.Size = new System.Drawing.Size(459, 492);
             this.listViewResults.TabIndex = 0;
             this.listViewResults.UseCompatibleStateImageBehavior = false;
             // 
@@ -661,7 +662,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1197, 612);
+            this.ClientSize = new System.Drawing.Size(1249, 612);
             this.Controls.Add(this.groupBoxResults);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBoxScore);

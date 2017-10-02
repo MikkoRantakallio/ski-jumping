@@ -20,10 +20,6 @@ namespace ski_jumping_score_calculator
             InitializeComponent();
         }
 
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-        }
-
         private void buttonCalculate_Click(object sender, EventArgs e)
         {
             if (textBoxCompetitorName.Text.Trim()=="")
@@ -32,26 +28,27 @@ namespace ski_jumping_score_calculator
                 return;
             }
 
-            decimal baseLengthPoints = scoreCalculator.CalcLengthPoints(numericUpDownJumpLength.Value);
+            scoreCalculator.SetupHill((int)numericUpDownKPoint.Value, numericUpDownPointsPerM.Value);
 
+            decimal baseLengthPoints = scoreCalculator.CalcLengthPoints(numericUpDownJumpLength.Value);
             decimal judgePoints = scoreCalculator.CalcJudgePoints(numericUpDownJudge1.Value, numericUpDownJudge2.Value, numericUpDownJudge3.Value,
                 numericUpDownJudge4.Value, numericUpDownJudge5.Value);
-
             decimal windPoints = scoreCalculator.CalcWindPoints(numericUpDownWindAverage.Value);
             decimal gatePoints = scoreCalculator.CalcGatePoints(numericUpDownStartGate.Value);
             decimal points = baseLengthPoints + judgePoints + windPoints + gatePoints;
 
             textBoxScore.Text = (points).ToString();
 
-            string[] arr = new string[3];
+            string[] arr = new string[4];
             ListViewItem itm;
             //add items to ListView
-            arr[2] = points.ToString();
-            arr[1] = textBoxCompetitorName.Text;
-            arr[0]= "";
+            arr[0] = "";
+            arr[1] = numericUpDownCompetitorNumber.Value.ToString();
+            arr[2] = textBoxCompetitorName.Text;
+            arr[3] = points.ToString();
 
             scoreList.Add(arr);
-            scoreList.Sort((x, y) => decimal.Parse(y[2]).CompareTo( decimal.Parse(x[2])));
+            scoreList.Sort((x, y) => decimal.Parse(y[3]).CompareTo( decimal.Parse(x[3])));
 
             // Clear the list
             listViewResults.Items.Clear();
@@ -86,16 +83,23 @@ namespace ski_jumping_score_calculator
             scoreList = new List<string[]>();
 
             // Setup jumping hill
-            scoreCalculator.SetupHill((int)numericUpDownKPoint.Value, numericUpDownPointsPerM.Value);
+//            scoreCalculator.SetupHill((int)numericUpDownKPoint.Value, numericUpDownPointsPerM.Value);
 
             // Setup score board
             listViewResults.View = View.Details;
             listViewResults.GridLines = true;
             listViewResults.FullRowSelect = true;
 
-            listViewResults.Columns.Add("Pos", 45);
+            listViewResults.Columns.Add("Pos", 50);
+            listViewResults.Columns.Add("Nbr", 50);
             listViewResults.Columns.Add("Competitor", 270);
             listViewResults.Columns.Add("Score", 80);
+        }
+
+        private void numericUpDownKPoint_ValueChanged(object sender, EventArgs e)
+        {
+            decimal value = numericUpDownKPoint.Value;
+            numericUpDownJumpLength.Value = value;
         }
     }
 }
