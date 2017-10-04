@@ -133,10 +133,17 @@ namespace ski_jumping_score_calculator
             numericUpDownKPoint.Value = Hills[ind].KPoint;
             numericUpDownPointsPerM.Value = (decimal)Hills[ind].PointsPerMeter;
 
-            SiteWeather localWeather = new SiteWeather();
-            double temp = localWeather.GetTemperatureC("Puijo");
+            SiteWeather weatherAtHill = new SiteWeather(comboBoxHills.SelectedItem.ToString());
 
-            int x = 0;
+            textBoxTemperature.Text = weatherAtHill.GetTemperature().ToString();
+            textBoxWindSpeed.Text = weatherAtHill.GetWindSpeed().ToString();
+            textBoxWindDirection.Text = weatherAtHill.GetWindDirection().ToString();
+            textBoxHumidity.Text = weatherAtHill.GetHumidity().ToString();
+        }
+
+        private void textBoxCompetitorName_Leave(object sender, EventArgs e)
+        {
+            textBoxScore.Text = "";
         }
     }
 }

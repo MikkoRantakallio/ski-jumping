@@ -1,7 +1,9 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Net;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,67 +17,24 @@ namespace ski_jumping_score_calculator
 
         static bool found;
 
-        public double GetTemperatureC(string city)
+        public double GetTemperature()
         {
-            if (localWeather.LocationName == null || localWeather.LocationName.ToUpper() != city.ToUpper())
-            {
-                localWeather = GetWeather(city);
-            }
-            if (found)
-            {
-                double temp = Math.Round(localWeather.MainData.Temperature - 272.15);
-                return temp;
-            }
-            else
-            {
-                return 0;
-            }
+            return Math.Round(localWeather.MainData.Temperature - 272.15);
         }
 
-        public double GetWindSpeed(string city)
+        public double GetWindSpeed()
         {
-            if (localWeather.LocationName == null || localWeather.LocationName.ToUpper() != city.ToUpper())
-            {
-                localWeather = GetWeather(city);
-            }
-            if (found)
-            {
-                double temp = Math.Round(localWeather.Wind.Speed);
-                return temp;
-            }
-            else
-            {
-                return 0;
-            }
+            return Math.Round(localWeather.Wind.Speed);
         }
 
-        public string GetLocationName(string city)
+        public double GetWindDirection()
         {
-            if (localWeather.LocationName == null || localWeather.LocationName.ToUpper() != city.ToUpper())
-            {
-                localWeather = GetWeather(city);
-            }
-            if (found)
-            {
-                string loca = localWeather.LocationName;
-                return loca;
-            }
-            else
-            {
-                return "Not found";
-            }
+            return Math.Round(localWeather.Wind.Degree);
         }
 
-        public List<WeatherDescription> GetDescrList()
+        public double GetHumidity()
         {
-            if (found)
-            {
-                return localWeather.Descriptions;
-            }
-            else
-            {
-                return null;
-            }
+            return localWeather.MainData.Humidity;
         }
 
         //===========================================================
@@ -85,32 +44,61 @@ namespace ski_jumping_score_calculator
             string url = "http://api.openweathermap.org/data/2.5/";
             client.BaseAddress = new Uri(url);
             client.DefaultRequestHeaders.Accept.Clear();
+            client.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
+
             found = true;
+        }
+
+        public SiteWeather(string city)
+        {
+            string url = "http://api.openweathermap.org/data/2.5/";
+            client.BaseAddress = new Uri(url);
+            client.DefaultRequestHeaders.Accept.Clear();
+            client.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
+
+            found = true;
+
+            localWeather = GetWeather(city);
         }
 
         public CurrentWeather GetWeather(string city)
         {
-            GetWeatherAsync(client.BaseAddress + "weather?q=" + city).Wait();
+            AskOpenWeather(client.BaseAddress + "weather?q=" + city);
             return localWeather;
         }
 
         //==========================================================================
 
-        static async Task<CurrentWeather> GetWeatherAsync(string path)
+        static void AskOpenWeather(string path)
         {
             path += "&APPID=52087b841a0e19eae02720bc08ef0b5b";
-            HttpResponseMessage response = await client.GetAsync(path);
-            if (response.IsSuccessStatusCode)
+            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(path);
+            HttpWebResponse response = (HttpWebResponse)request.GetResponse();
+            string data = string.Empty;
+            if (response.StatusCode == HttpStatusCode.OK)
             {
-                var data = await response.Content.ReadAsStringAsync();
+                Stream receiveStream = response.GetResponseStream();
+                StreamReader readStream = null;
+
+                if (response.CharacterSet == null)
+                {
+                    readStream = new StreamReader(receiveStream);
+                }
+                else
+                {
+                    readStream = new StreamReader(receiveStream, Encoding.GetEncoding(response.CharacterSet));
+                }
+
+                data = readStream.ReadToEnd();
                 localWeather = JsonConvert.DeserializeObject<CurrentWeather>(data);
+                response.Close();
+                readStream.Close();
                 found = true;
             }
             else
             {
                 found = false;
             }
-            return localWeather;
         }
     }
 }

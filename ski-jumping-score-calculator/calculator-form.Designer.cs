@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.groupBoxHillSetup = new System.Windows.Forms.GroupBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.comboBoxHills = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.numericUpDownPointsPerM = new System.Windows.Forms.NumericUpDown();
             this.labelPointsPerM = new System.Windows.Forms.Label();
@@ -67,8 +69,18 @@
             this.numericUpDownJumpLength = new System.Windows.Forms.NumericUpDown();
             this.groupBoxResults = new System.Windows.Forms.GroupBox();
             this.listViewResults = new System.Windows.Forms.ListView();
-            this.comboBoxHills = new System.Windows.Forms.ComboBox();
-            this.label11 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.textBoxTemperature = new System.Windows.Forms.TextBox();
+            this.textBoxWindSpeed = new System.Windows.Forms.TextBox();
+            this.textBoxWindDirection = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.textBoxHumidity = new System.Windows.Forms.TextBox();
+            this.label18 = new System.Windows.Forms.Label();
             this.groupBoxHillSetup.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPointsPerM)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownKPoint)).BeginInit();
@@ -87,10 +99,12 @@
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownJumpLength)).BeginInit();
             this.groupBoxResults.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBoxHillSetup
             // 
+            this.groupBoxHillSetup.Controls.Add(this.groupBox2);
             this.groupBoxHillSetup.Controls.Add(this.label11);
             this.groupBoxHillSetup.Controls.Add(this.comboBoxHills);
             this.groupBoxHillSetup.Controls.Add(this.label7);
@@ -105,6 +119,25 @@
             this.groupBoxHillSetup.TabIndex = 0;
             this.groupBoxHillSetup.TabStop = false;
             this.groupBoxHillSetup.Text = "Hill Setup";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(12, 49);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(30, 20);
+            this.label11.TabIndex = 8;
+            this.label11.Text = "Hill";
+            // 
+            // comboBoxHills
+            // 
+            this.comboBoxHills.FormattingEnabled = true;
+            this.comboBoxHills.Location = new System.Drawing.Point(88, 49);
+            this.comboBoxHills.Name = "comboBoxHills";
+            this.comboBoxHills.Size = new System.Drawing.Size(150, 28);
+            this.comboBoxHills.TabIndex = 7;
+            this.comboBoxHills.SelectionChangeCommitted += new System.EventHandler(this.comboBoxHills_SelectionChangeCommitted);
             // 
             // label7
             // 
@@ -203,6 +236,7 @@
             this.textBoxCompetitorName.Name = "textBoxCompetitorName";
             this.textBoxCompetitorName.Size = new System.Drawing.Size(317, 26);
             this.textBoxCompetitorName.TabIndex = 5;
+            this.textBoxCompetitorName.Leave += new System.EventHandler(this.textBoxCompetitorName_Leave);
             // 
             // labelCompName
             // 
@@ -662,24 +696,131 @@
             this.listViewResults.TabIndex = 0;
             this.listViewResults.UseCompatibleStateImageBehavior = false;
             // 
-            // comboBoxHills
+            // groupBox2
             // 
-            this.comboBoxHills.FormattingEnabled = true;
-            this.comboBoxHills.Location = new System.Drawing.Point(88, 49);
-            this.comboBoxHills.Name = "comboBoxHills";
-            this.comboBoxHills.Size = new System.Drawing.Size(150, 28);
-            this.comboBoxHills.TabIndex = 7;
-            this.comboBoxHills.SelectionChangeCommitted += new System.EventHandler(this.comboBoxHills_SelectionChangeCommitted);
+            this.groupBox2.Controls.Add(this.label17);
+            this.groupBox2.Controls.Add(this.textBoxHumidity);
+            this.groupBox2.Controls.Add(this.label18);
+            this.groupBox2.Controls.Add(this.label16);
+            this.groupBox2.Controls.Add(this.label15);
+            this.groupBox2.Controls.Add(this.label14);
+            this.groupBox2.Controls.Add(this.textBoxWindDirection);
+            this.groupBox2.Controls.Add(this.textBoxWindSpeed);
+            this.groupBox2.Controls.Add(this.textBoxTemperature);
+            this.groupBox2.Controls.Add(this.label13);
+            this.groupBox2.Controls.Add(this.label12);
+            this.groupBox2.Location = new System.Drawing.Point(9, 209);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(257, 321);
+            this.groupBox2.TabIndex = 9;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Weather";
             // 
-            // label11
+            // label12
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(12, 49);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(30, 20);
-            this.label11.TabIndex = 8;
-            this.label11.Text = "Hill";
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(13, 62);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(100, 20);
+            this.label12.TabIndex = 10;
+            this.label12.Text = "Temperature";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(13, 103);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(45, 20);
+            this.label13.TabIndex = 11;
+            this.label13.Text = "Wind";
+            // 
+            // textBoxTemperature
+            // 
+            this.textBoxTemperature.Enabled = false;
+            this.textBoxTemperature.Location = new System.Drawing.Point(137, 62);
+            this.textBoxTemperature.Name = "textBoxTemperature";
+            this.textBoxTemperature.Size = new System.Drawing.Size(54, 26);
+            this.textBoxTemperature.TabIndex = 12;
+            this.textBoxTemperature.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // textBoxWindSpeed
+            // 
+            this.textBoxWindSpeed.Enabled = false;
+            this.textBoxWindSpeed.Location = new System.Drawing.Point(137, 103);
+            this.textBoxWindSpeed.Name = "textBoxWindSpeed";
+            this.textBoxWindSpeed.Size = new System.Drawing.Size(54, 26);
+            this.textBoxWindSpeed.TabIndex = 13;
+            this.textBoxWindSpeed.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // textBoxWindDirection
+            // 
+            this.textBoxWindDirection.Enabled = false;
+            this.textBoxWindDirection.Location = new System.Drawing.Point(137, 145);
+            this.textBoxWindDirection.Name = "textBoxWindDirection";
+            this.textBoxWindDirection.Size = new System.Drawing.Size(54, 26);
+            this.textBoxWindDirection.TabIndex = 14;
+            this.textBoxWindDirection.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(197, 62);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(20, 20);
+            this.label14.TabIndex = 15;
+            this.label14.Text = "C";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(197, 106);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(34, 20);
+            this.label15.TabIndex = 16;
+            this.label15.Text = "m/s";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(197, 148);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(36, 20);
+            this.label16.TabIndex = 17;
+            this.label16.Text = "deg";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(197, 183);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(23, 20);
+            this.label17.TabIndex = 20;
+            this.label17.Text = "%";
+            // 
+            // textBoxHumidity
+            // 
+            this.textBoxHumidity.Enabled = false;
+            this.textBoxHumidity.Location = new System.Drawing.Point(137, 183);
+            this.textBoxHumidity.Name = "textBoxHumidity";
+            this.textBoxHumidity.Size = new System.Drawing.Size(54, 26);
+            this.textBoxHumidity.TabIndex = 19;
+            this.textBoxHumidity.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(13, 183);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(70, 20);
+            this.label18.TabIndex = 18;
+            this.label18.Text = "Humidity";
             // 
             // CalculatorForm
             // 
@@ -720,6 +861,8 @@
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownJumpLength)).EndInit();
             this.groupBoxResults.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -767,6 +910,18 @@
         private System.Windows.Forms.ListView listViewResults;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.ComboBox comboBoxHills;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.TextBox textBoxHumidity;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.TextBox textBoxWindDirection;
+        private System.Windows.Forms.TextBox textBoxWindSpeed;
+        private System.Windows.Forms.TextBox textBoxTemperature;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label12;
     }
 }
 
