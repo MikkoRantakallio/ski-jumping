@@ -14,6 +14,7 @@ namespace ski_jumping_score_calculator
     {
         private SkiJumpScoreCalculator scoreCalculator;
         private List<string[]> scoreList;
+        private List<Hill> Hills;
 
         public CalculatorForm()
         {
@@ -25,6 +26,7 @@ namespace ski_jumping_score_calculator
             if (textBoxCompetitorName.Text.Trim()=="")
             {
                 MessageBox.Show("Competitor cannot be empty!", "Missing data");
+                textBoxCompetitorName.Focus();
                 return;
             }
 
@@ -74,6 +76,10 @@ namespace ski_jumping_score_calculator
 
             numericUpDownKPoint.Enabled = false;
             numericUpDownPointsPerM.Enabled = false;
+            comboBoxHills.Enabled = false;
+
+            // Set focus back to competitor name
+            textBoxCompetitorName.Focus();
         }
 
         private void CalculatorForm_Load(object sender, EventArgs e)
@@ -81,9 +87,6 @@ namespace ski_jumping_score_calculator
             // Create calculator and score array
             scoreCalculator = new SkiJumpScoreCalculator();
             scoreList = new List<string[]>();
-
-            // Setup jumping hill
-//            scoreCalculator.SetupHill((int)numericUpDownKPoint.Value, numericUpDownPointsPerM.Value);
 
             // Setup score board
             listViewResults.View = View.Details;
@@ -94,12 +97,46 @@ namespace ski_jumping_score_calculator
             listViewResults.Columns.Add("Nbr", 50);
             listViewResults.Columns.Add("Competitor", 270);
             listViewResults.Columns.Add("Score", 80);
+
+            // Fill hill combo from file
+            string[] lines = System.IO.File.ReadAllLines("hills.txt");
+
+            Hills = new List<Hill>();
+
+            foreach (string line in lines)
+            {
+                Hill hill = new Hill();
+
+                string deliStr = ";";
+                char[] delimiter = deliStr.ToCharArray();
+                string[] hillData = line.Split(delimiter, 3);
+
+                hill.Name = hillData[0];
+                hill.KPoint = int.Parse(hillData[1]);
+                hill.PointsPerMeter = double.Parse(hillData[2]);
+
+                Hills.Add(hill);
+
+                comboBoxHills.Items.Add(hill.Name);
+            }
         }
 
         private void numericUpDownKPoint_ValueChanged(object sender, EventArgs e)
         {
             decimal value = numericUpDownKPoint.Value;
             numericUpDownJumpLength.Value = value;
+        }
+
+        private void comboBoxHills_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            int ind = comboBoxHills.SelectedIndex;
+            numericUpDownKPoint.Value = Hills[ind].KPoint;
+            numericUpDownPointsPerM.Value = (decimal)Hills[ind].PointsPerMeter;
+
+            SiteWeather localWeather = new SiteWeather();
+            double temp = localWeather.GetTemperatureC("Puijo");
+
+            int x = 0;
         }
     }
 }

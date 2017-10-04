@@ -67,6 +67,8 @@
             this.numericUpDownJumpLength = new System.Windows.Forms.NumericUpDown();
             this.groupBoxResults = new System.Windows.Forms.GroupBox();
             this.listViewResults = new System.Windows.Forms.ListView();
+            this.comboBoxHills = new System.Windows.Forms.ComboBox();
+            this.label11 = new System.Windows.Forms.Label();
             this.groupBoxHillSetup.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPointsPerM)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownKPoint)).BeginInit();
@@ -89,6 +91,8 @@
             // 
             // groupBoxHillSetup
             // 
+            this.groupBoxHillSetup.Controls.Add(this.label11);
+            this.groupBoxHillSetup.Controls.Add(this.comboBoxHills);
             this.groupBoxHillSetup.Controls.Add(this.label7);
             this.groupBoxHillSetup.Controls.Add(this.numericUpDownPointsPerM);
             this.groupBoxHillSetup.Controls.Add(this.labelPointsPerM);
@@ -97,7 +101,7 @@
             this.groupBoxHillSetup.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxHillSetup.Location = new System.Drawing.Point(12, 12);
             this.groupBoxHillSetup.Name = "groupBoxHillSetup";
-            this.groupBoxHillSetup.Size = new System.Drawing.Size(186, 547);
+            this.groupBoxHillSetup.Size = new System.Drawing.Size(279, 547);
             this.groupBoxHillSetup.TabIndex = 0;
             this.groupBoxHillSetup.TabStop = false;
             this.groupBoxHillSetup.Text = "Hill Setup";
@@ -106,7 +110,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(146, 49);
+            this.label7.Location = new System.Drawing.Point(244, 105);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(22, 20);
             this.label7.TabIndex = 6;
@@ -121,14 +125,14 @@
             0,
             0,
             65536});
-            this.numericUpDownPointsPerM.Location = new System.Drawing.Point(84, 100);
+            this.numericUpDownPointsPerM.Location = new System.Drawing.Point(160, 158);
             this.numericUpDownPointsPerM.Maximum = new decimal(new int[] {
             5,
             0,
             0,
             0});
             this.numericUpDownPointsPerM.Name = "numericUpDownPointsPerM";
-            this.numericUpDownPointsPerM.Size = new System.Drawing.Size(56, 26);
+            this.numericUpDownPointsPerM.Size = new System.Drawing.Size(78, 26);
             this.numericUpDownPointsPerM.TabIndex = 3;
             this.numericUpDownPointsPerM.TabStop = false;
             this.numericUpDownPointsPerM.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -142,7 +146,7 @@
             // 
             this.labelPointsPerM.AutoSize = true;
             this.labelPointsPerM.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPointsPerM.Location = new System.Drawing.Point(6, 102);
+            this.labelPointsPerM.Location = new System.Drawing.Point(12, 160);
             this.labelPointsPerM.Name = "labelPointsPerM";
             this.labelPointsPerM.Size = new System.Drawing.Size(70, 20);
             this.labelPointsPerM.TabIndex = 2;
@@ -151,14 +155,14 @@
             // numericUpDownKPoint
             // 
             this.numericUpDownKPoint.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownKPoint.Location = new System.Drawing.Point(84, 47);
+            this.numericUpDownKPoint.Location = new System.Drawing.Point(160, 105);
             this.numericUpDownKPoint.Maximum = new decimal(new int[] {
             250,
             0,
             0,
             0});
             this.numericUpDownKPoint.Name = "numericUpDownKPoint";
-            this.numericUpDownKPoint.Size = new System.Drawing.Size(56, 26);
+            this.numericUpDownKPoint.Size = new System.Drawing.Size(78, 26);
             this.numericUpDownKPoint.TabIndex = 0;
             this.numericUpDownKPoint.TabStop = false;
             this.numericUpDownKPoint.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -173,7 +177,7 @@
             // 
             this.labelKPoint.AutoSize = true;
             this.labelKPoint.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelKPoint.Location = new System.Drawing.Point(6, 49);
+            this.labelKPoint.Location = new System.Drawing.Point(12, 105);
             this.labelKPoint.Name = "labelKPoint";
             this.labelKPoint.Size = new System.Drawing.Size(60, 20);
             this.labelKPoint.TabIndex = 0;
@@ -186,7 +190,7 @@
             this.groupBoxCompetitor.Controls.Add(this.labelCompNumber);
             this.groupBoxCompetitor.Controls.Add(this.numericUpDownCompetitorNumber);
             this.groupBoxCompetitor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxCompetitor.Location = new System.Drawing.Point(204, 12);
+            this.groupBoxCompetitor.Location = new System.Drawing.Point(307, 12);
             this.groupBoxCompetitor.Name = "groupBoxCompetitor";
             this.groupBoxCompetitor.Size = new System.Drawing.Size(537, 96);
             this.groupBoxCompetitor.TabIndex = 2;
@@ -247,7 +251,7 @@
             this.groupBoxJudgePoints.Controls.Add(this.numericUpDownJudge2);
             this.groupBoxJudgePoints.Controls.Add(this.numericUpDownJudge1);
             this.groupBoxJudgePoints.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxJudgePoints.Location = new System.Drawing.Point(204, 221);
+            this.groupBoxJudgePoints.Location = new System.Drawing.Point(308, 221);
             this.groupBoxJudgePoints.Name = "groupBoxJudgePoints";
             this.groupBoxJudgePoints.Size = new System.Drawing.Size(536, 112);
             this.groupBoxJudgePoints.TabIndex = 4;
@@ -438,7 +442,7 @@
             this.groupBoxCompensations.Controls.Add(this.labelWind);
             this.groupBoxCompensations.Controls.Add(this.numericUpDownWindAverage);
             this.groupBoxCompensations.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxCompensations.Location = new System.Drawing.Point(204, 339);
+            this.groupBoxCompensations.Location = new System.Drawing.Point(308, 339);
             this.groupBoxCompensations.Name = "groupBoxCompensations";
             this.groupBoxCompensations.Size = new System.Drawing.Size(536, 98);
             this.groupBoxCompensations.TabIndex = 5;
@@ -541,7 +545,7 @@
             this.groupBoxScore.Controls.Add(this.label10);
             this.groupBoxScore.Controls.Add(this.textBoxScore);
             this.groupBoxScore.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxScore.Location = new System.Drawing.Point(204, 443);
+            this.groupBoxScore.Location = new System.Drawing.Point(308, 443);
             this.groupBoxScore.Name = "groupBoxScore";
             this.groupBoxScore.Size = new System.Drawing.Size(536, 116);
             this.groupBoxScore.TabIndex = 6;
@@ -585,9 +589,9 @@
             this.groupBox1.Controls.Add(this.labelLength);
             this.groupBox1.Controls.Add(this.numericUpDownJumpLength);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(204, 114);
+            this.groupBox1.Location = new System.Drawing.Point(307, 119);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(537, 82);
+            this.groupBox1.Size = new System.Drawing.Size(537, 96);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Jump length";
@@ -641,9 +645,9 @@
             // 
             this.groupBoxResults.Controls.Add(this.listViewResults);
             this.groupBoxResults.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxResults.Location = new System.Drawing.Point(766, 23);
+            this.groupBoxResults.Location = new System.Drawing.Point(850, 12);
             this.groupBoxResults.Name = "groupBoxResults";
-            this.groupBoxResults.Size = new System.Drawing.Size(471, 536);
+            this.groupBoxResults.Size = new System.Drawing.Size(484, 547);
             this.groupBoxResults.TabIndex = 7;
             this.groupBoxResults.TabStop = false;
             this.groupBoxResults.Text = "Results";
@@ -652,17 +656,36 @@
             // 
             this.listViewResults.Enabled = false;
             this.listViewResults.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listViewResults.Location = new System.Drawing.Point(6, 38);
+            this.listViewResults.Location = new System.Drawing.Point(12, 25);
             this.listViewResults.Name = "listViewResults";
             this.listViewResults.Size = new System.Drawing.Size(459, 492);
             this.listViewResults.TabIndex = 0;
             this.listViewResults.UseCompatibleStateImageBehavior = false;
             // 
+            // comboBoxHills
+            // 
+            this.comboBoxHills.FormattingEnabled = true;
+            this.comboBoxHills.Location = new System.Drawing.Point(88, 49);
+            this.comboBoxHills.Name = "comboBoxHills";
+            this.comboBoxHills.Size = new System.Drawing.Size(150, 28);
+            this.comboBoxHills.TabIndex = 7;
+            this.comboBoxHills.SelectionChangeCommitted += new System.EventHandler(this.comboBoxHills_SelectionChangeCommitted);
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(12, 49);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(30, 20);
+            this.label11.TabIndex = 8;
+            this.label11.Text = "Hill";
+            // 
             // CalculatorForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1249, 612);
+            this.ClientSize = new System.Drawing.Size(1370, 612);
             this.Controls.Add(this.groupBoxResults);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBoxScore);
@@ -742,6 +765,8 @@
         private System.Windows.Forms.TextBox textBoxScore;
         private System.Windows.Forms.GroupBox groupBoxResults;
         private System.Windows.Forms.ListView listViewResults;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.ComboBox comboBoxHills;
     }
 }
 
